@@ -1,0 +1,51 @@
+package com.imooc.o2o.dao;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.Date;
+import java.util.List;
+
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.imooc.o2o.BaseTest;
+import com.imooc.o2o.entity.Area;
+import com.imooc.o2o.entity.PersonInfo;
+import com.imooc.o2o.entity.Shop;
+import com.imooc.o2o.entity.ShopCategory;
+
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class ShopDaoTest extends BaseTest {
+	@Autowired
+	private ShopDao shopDao;
+
+	@Test
+	public void testAInsertShop() throws Exception {
+		Shop shop = new Shop();
+		PersonInfo owner = new PersonInfo();
+		owner.setUserId(1L);
+		Area area = new Area();
+		area.setAreaId(2L);
+		ShopCategory sc = new ShopCategory();
+		
+		
+		shop.setShopName("测试的店铺");
+		shop.setOwner(owner);
+		shop.setShopCategory(sc);
+		shop.setShopName("测试的店铺");
+		shop.setShopDesc("test");
+		shop.setShopAddr("testaddr1");
+		shop.setPhone("13810524526");
+		shop.setShopImg("test1");
+		shop.setCreateTime(new Date());
+		shop.setEnableStatus(1);
+		shop.setAdvice("审核中");
+		int effectedNum = shopDao.insertShop(shop);
+		assertEquals(1, effectedNum);
+	}
+
+
+}

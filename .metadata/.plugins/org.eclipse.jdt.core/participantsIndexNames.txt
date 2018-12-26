@@ -1,0 +1,3 @@
+INDEX VERSION 1.130
+F:\ServiceToLife\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2412762766.index
+\o2o\src\main\resources

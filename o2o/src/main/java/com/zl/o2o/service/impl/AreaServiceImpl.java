@@ -1,0 +1,29 @@
+package com.zl.o2o.service.impl;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.zl.o2o.dao.AreaDao;
+import com.zl.o2o.entity.Area;
+import com.zl.o2o.service.AreaService;
+
+@Service  //告诉spring，这个类是托管在spring的IOC容器中，在用的时候需要注入到我所需要的地方
+public class AreaServiceImpl implements AreaService{
+	
+	@Autowired
+	private AreaDao areaDao;
+	@Override
+	public List<Area> getAreaList() throws JsonParseException, JsonMappingException, IOException {
+		// TODO Auto-generated method stub
+		return areaDao.queryArea();
+	}
+	
+	
+	
+
+}

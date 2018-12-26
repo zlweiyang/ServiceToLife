@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.imooc.o2o.exceptions.ShopOperationException"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Param"/>
+<fullyQualifiedTypeName name="com.imooc.o2o.util.PageCalculator"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+</qualifiedTypeNameHistroy>

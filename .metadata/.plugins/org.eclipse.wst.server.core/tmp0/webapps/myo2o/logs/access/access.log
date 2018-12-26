@@ -1,0 +1,8 @@
+2018-12-19 17:58:37.941 [http-nio-8080-exec-3] INFO  com.imooc.o2o.web.superadmin.AreaController -
+				====start===
+2018-12-19 17:58:38.572 [http-nio-8080-exec-3] ERROR com.imooc.o2o.web.superadmin.AreaController -
+				test error!
+2018-12-19 17:58:38.572 [http-nio-8080-exec-3] DEBUG com.imooc.o2o.web.superadmin.AreaController -
+				costTime:[627ms]
+2018-12-19 17:58:38.574 [http-nio-8080-exec-3] INFO  com.imooc.o2o.web.superadmin.AreaController -
+				====end===
